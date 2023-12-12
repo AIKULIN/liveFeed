@@ -1,0 +1,38 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+
+#chat-container {
+    position: relative;
+    overflow-y: scroll;
+    font-weight:600;
+}
+
+#chat-text {
+    position: absolute;
+    /*top: 35px;*/
+    left: 0;
+    padding: 10px;
+    font-weight:600;
+    color: white;
+}
+
+#feed-button {
+    /*position: absolute;*/
+    /*top: 172px; !* -60 *!*/
+    /*left: 270px; !* -144 *!*/
+}
+
+#iframe-container {
+    position: relative;
+}
+
+iframe {
+    width: 640px;
+    height: 360px;
+    border: 0;
+}

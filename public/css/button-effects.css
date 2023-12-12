@@ -1,0 +1,49 @@
+
+.btnEf {
+    position: relative;
+    border: none;
+    width: 100px;
+    background-color: orangered;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.5s;
+    padding: 10px;
+}
+
+.btnEf::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 0%;
+    transition: all 0.5s;
+    z-index: -1;
+    border-radius: 5px;
+
+    border-top: 3px solid orangered;
+}
+
+.btnEf::before {
+    content: '';
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 0%;
+    transition: all 0.5s;
+    border-radius: 5px;
+
+    z-index: -1;
+    border-top: 3px solid orangered;
+}
+
+.btnEf:hover {
+    /*background-color: transparent;*/
+    /*color: orangered;*/
+}
+
+.btnEf:hover::after,
+.btnEf:hover::before {
+    width: 100%;
+}
